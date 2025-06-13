@@ -61,4 +61,11 @@ JWT_KEY=
 Antes de fazer requisições para a maioria das rotas, você precisará obter um **token de autenticação**.
 
 1.  **Obter Token**: Faça uma requisição `POST` para a rota `v1/auth` para obter seu token.
-2.  **Requisições Autenticadas**: Com o token em mãos, você poderá fazer requisições para as rotas de notificação, como a `v1/notifications`. Lembre-se de incluir o token no cabeçalho `Authorization` de suas requisições, geralmente no formato `Bearer [seu_token]`.
+2.  **Requisições Autenticadas**: Com o token em mãos, você poderá fazer requisições para as rotas de notificação, como a `v1/notifications`. Lembre-se de incluir o token no cabeçalho `Authorization` de suas requisições, no formato `Bearer [seu_token]`.
+
+## Exemplode de Requisição (body)
+
+{
+  "title": "Teste",
+  "description": "Minha primeira notificação"
+}
